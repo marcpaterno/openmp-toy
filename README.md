@@ -5,7 +5,7 @@ Toy programs using OpenMP, to demonstrate how to build OpenMP programs.
 ## Recommended build
 
 We use *CMake*. Get a modern version!
-To set up the buid, use:
+To set up the build, use:
 
     mkdir build
     cd build
