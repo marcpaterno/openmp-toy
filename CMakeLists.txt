@@ -9,8 +9,8 @@ find_package(OpenMP REQUIRED) # Because we're not kidding
 
 
 add_executable(hello hello.cc)
-target_link_libraries(hello $<$<CONFIG:Release>:OpenMP::OpenMP_CXX>)
+target_link_libraries(hello OpenMP::OpenMP_CXX)
 add_executable(pi pi.cc)
-target_link_libraries(pi $<$<CONFIG:Release>:OpenMP::OpenMP_CXX>)
+target_link_libraries(pi OpenMP::OpenMP_CXX)
 add_executable(single single.cc)
-target_link_libraries(single $<$<CONFIG:Release>:OpenMP::OpenMP_CXX>)
+target_link_libraries(single OpenMP::OpenMP_CXX)
